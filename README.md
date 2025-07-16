@@ -40,3 +40,11 @@ yay -S adwaita-qt5-git
 yay -S adwaita-qt6-git
 yay -S tela-icon-theme
 pacman -S lazygit
+pacman -S luarocks
+pacman -S fd
+pacman -S fzf
+pacman -S wget 
+pacman -S unzip
+pacman -S ripgrep
+pacman -S imagemagick 
+
