@@ -1,9 +1,6 @@
 # TODO 
-- instalar clipboard 
-- instalar lock-screen
 - instalar bluetooth
 - instalar zsh omy-zsh
-
 
 # Instalados
 
@@ -42,4 +39,4 @@ pacman -S gnome-themes-extra
 yay -S adwaita-qt5-git
 yay -S adwaita-qt6-git
 yay -S tela-icon-theme
-
+pacman -S lazygit
