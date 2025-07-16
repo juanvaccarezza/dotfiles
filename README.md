@@ -27,7 +27,7 @@ pacman -S dunst
 pacman -S brightnessctl
 pacman -S waybar
 yay -S tofi
-yay -S swww
+yay -S hyprpaper
 pacman -S wl-clipboard
 yay -S hyprpicker
 yay -S hyprlock
