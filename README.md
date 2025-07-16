@@ -1,4 +1,5 @@
 # TODO 
+- instalar nmaplet
 - instalar bluetooth
 - instalar zsh omy-zsh
 
