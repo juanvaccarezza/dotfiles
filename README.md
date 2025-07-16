@@ -6,24 +6,25 @@
 
 # Instalados
 
-Instalar nvim
-Installar git
-Instalar go
+```bash
+#installar yay
 
-installar yay
+pacman -S nvim
+pacman -S git
+pacman -S go
 
 pacman -S ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-firacode-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd ttf-jetbrains-mono-nerd ttf-jetbrains-mono ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono
 
-instalar sddm
-instalar firefox
-instalar kitty
+pacman -S sddm
+pacman -S firefox
+pacman -S kitty
 pacman -S nemo
-instalar Hyprland
-instalar xdg-desktop-portal-hyprland
-insatlar polkit-kde
-instalar qt5 y qt6 wayland
-instalar dust
-instalar brightnessctl
+pacman -S Hyprland
+pacman -S xdg-desktop-portal-hyprland
+pacman -S polkit-kde
+pacman -S qt5 y qt6 wayland
+pacman -S dunst
+pacman -S brightnessctl
 pacman -S waybar
 yay -S tofi
 yay -S swww
@@ -49,4 +50,4 @@ pacman -S wget
 pacman -S unzip
 pacman -S ripgrep
 pacman -S imagemagick 
-
+```
