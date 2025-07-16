@@ -2,6 +2,7 @@
 - instalar nmaplet
 - instalar bluetooth
 - instalar zsh omy-zsh
+- acomodar waybar
 
 # Instalados
 
