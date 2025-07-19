@@ -1,8 +1,7 @@
 # TODO 
-- instalar nmaplet
 - instalar bluetooth
 - instalar zsh omy-zsh
-- acomodar waybar
+- acomodar waybar (incluir nm-applet)
 
 # Instalados
 
@@ -39,9 +38,14 @@ pacman -S qt5ct qt6ct kvantum
 yay -S kvantum-theme-catppuccin-git
 
 pacman -S gnome-themes-extra
+pacman -S xdg-desktop-portal-gtk
+pacman -S gnome-keyringn
+pacman -S seahorhse
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 yay -S adwaita-qt5-git
 yay -S adwaita-qt6-git
-yay -S tela-icon-theme
+yay -S nwg-displays
+#Not DE
 pacman -S lazygit
 pacman -S luarocks
 pacman -S fd
@@ -50,4 +54,8 @@ pacman -S wget
 pacman -S unzip
 pacman -S ripgrep
 pacman -S imagemagick 
+pacman -S network-manager-applet
+# Config extra
+# Remember to chsh -s /usr/bin/zsh
+pacman -S zsh zsh-completions
 ```
