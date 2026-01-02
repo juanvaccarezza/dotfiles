@@ -1,4 +1,11 @@
-# TODO 
+# Use stop with --dotfiles (need laatest version)
+
+```sh
+stow --dotfiles task
+```
+
+# TODO
+
 - instalar bluetooth
 - instalar zsh omy-zsh
 - acomodar waybar (incluir nm-applet)
