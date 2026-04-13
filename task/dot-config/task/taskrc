@@ -39,3 +39,6 @@ report.simple.sort=project+\/,source+,entry+
 report.simple.filter=status:pending
 
 editor=nvim
+news.version=2.6.0
+context.inbox.read=+inbox
+context.inbox.write=+inbox
