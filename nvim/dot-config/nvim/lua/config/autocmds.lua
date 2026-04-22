@@ -3,3 +3,4 @@
 -- Add any additional autocmds here
 
 vim.cmd("set spelllang=es,en")
+vim.api.nvim_set_hl(0, "ColorColumn", { link = "CursorLine" })
