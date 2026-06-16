@@ -1,5 +1,13 @@
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export LIBVIRT_DEFAULT_URI="qemu:///system" 
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -75,7 +83,15 @@ zstyle ':omz:plugins:eza' 'icons' yes
 zstyle ':omz:plugins:eza' 'dirs-first' yes
 # plugins=(git fzf z eza zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)
 
-plugins=(git fzf)
+# Plugins base
+plugins=(git fzf poetry poetry-env)
+
+# Plugins condicionales
+if command -v pyenv &> /dev/null; then
+  eval "$(pyenv init --path)"
+  plugins+=(pyenv)
+fi
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -110,4 +126,19 @@ source $ZSH/oh-my-zsh.sh
 alias v=nvim
 alias vi=nvim
 alias vim=nvim
-eval "$(zoxide init zsh)"
+
+if command -v zoxide &> /dev/null; then
+  eval "$(zoxide init zsh)"
+fi
+
+
+export PATH=$HOME/.local/bin:$PATH
+
+#For devpod containers
+alias devcon='docker exec -it -u devuser $(docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}" | fzf --prompt="workspace > " --height=40% --layout=reverse --header-lines=1 --query="devpod" | awk "{print \$1}") zsh'
+
+if [ -n "$DEVPOD_WORKSPACE_ID" ]; then
+  PROMPT="%{$fg[cyan]%}[devpod:$DEVPOD_WORKSPACE_ID]%{$reset_color%} $PROMPT"
+fi
+
+
